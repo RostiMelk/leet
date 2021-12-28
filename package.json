@@ -1,0 +1,27 @@
+{
+	"name": "leet",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/RostiMelk/leet.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/RostiMelk/leet/issues"
+	},
+	"homepage": "https://github.com/RostiMelk/leet#readme",
+	"dependencies": {
+		"dotenv": "^10.0.0",
+		"facebook-chat-api": "^1.8.0",
+		"node-cron": "^3.0.0",
+		"puppeteer": "^13.0.1"
+	}
+}
