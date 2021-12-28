@@ -9,6 +9,7 @@ Change the .env.example file to .env and fill in the following variables:
 -   FB_EMAIL
 -   FB_PASSWORD
 -   FB_CHAT_ID
+-   CRON_TIMEZONE
 
 Run `npm install` and `npm start`
 

@@ -10,8 +10,17 @@ async function leet() {
 	await messenger.sendMessage(message, chatId);
 }
 
-// Schedule a task to run every day at 13:37:00
-cron.schedule('37 13 * * *', () => {
-	console.log('Running leet');
-	leet();
-});
+const cronOptions = {
+	scheduled: true,
+	timezone: process.env.CRON_TIMEZONE || 'Europe/Oslo',
+};
+
+// Schedule leet to run every day at 13:37:00
+cron.schedule(
+	'37 13 * * *',
+	() => {
+		console.log('Running leet');
+		leet();
+	},
+	cronOptions
+);
