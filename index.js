@@ -5,7 +5,6 @@ const Messenger = require('./lib/messenger.js');
 async function leet() {
 	const message = 'leet';
 	const chatId = process.env.FB_CHAT_ID;
-
 	const messenger = new Messenger();
 	await messenger.sendMessage(message, chatId);
 }
@@ -16,11 +15,6 @@ const cronOptions = {
 };
 
 // Schedule leet to run every day at 13:37:00
-cron.schedule(
-	'37 13 * * *',
-	() => {
-		console.log('Running leet');
-		leet();
-	},
-	cronOptions
-);
+cron.schedule('37 13 * * *', () => leet(), cronOptions);
+
+console.log('Running leet');

@@ -11,7 +11,8 @@ Change the .env.example file to .env and fill in the following variables:
 -   FB_CHAT_ID
 -   CRON_TIMEZONE
 
-Run `npm install` and `npm start`
+Run `docker build -t leet .` and `docker run leet`,\
+or without Docker: `npm install` and `npm start`
 
 ### Why?
 
